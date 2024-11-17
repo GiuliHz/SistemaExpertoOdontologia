@@ -22,7 +22,7 @@ caracteristicas_frame.grid(row=0, column=1, sticky="ne", padx=10, pady=10)
 # Variables de interfaz para los síntomas
 sintomas_vars = {
     "pus": tk.BooleanVar(),
-    "dolor_pulpa": tk.BooleanVar(),
+    "dolor_pulpa_dental": tk.BooleanVar(),
     "fiebre": tk.BooleanVar(),
     "manchas_blancas_removibles": tk.BooleanVar(),
     "defensas_bajas": tk.BooleanVar(),
@@ -36,7 +36,7 @@ sintomas_vars = {
     "flemon": tk.BooleanVar(),
     "infeccion_cuello_torax": tk.BooleanVar(),
     "heridas_sucias": tk.BooleanVar(),
-    "infeccion_resistente": tk.BooleanVar(),
+    "infeccion_resistente_a_antibioticos": tk.BooleanVar(),
     "muela_juicio_retenida": tk.BooleanVar(),
     "bruxismo": tk.BooleanVar(),
     "estres_mala_oclusion": tk.BooleanVar(),
@@ -91,23 +91,20 @@ def generar_receta():
     # Recopilar y declarar los síntomas seleccionados
     sintomas_seleccionados = {sintoma: var.get() for sintoma, var in sintomas_vars.items() if var.get()}
     if sintomas_seleccionados:
-        print("Declarando síntomas:", sintomas_seleccionados)
+        
         engine.declare(Sintomas(**sintomas_seleccionados))
 
     # Declarar la característica de alergia si está marcada
     if alergia_var.get():
-        print("Declarando alergia a penicilina")
+        
         engine.declare(CaracteristicasPaciente(alergia_penicilina=True))
     
     # Declarar la característica de peso superior al promedio si está marcada
     if peso_superior_promedio_var.get():
-        print("Peso superior al promedio")
+        
         engine.declare(CaracteristicasPaciente(peso_superior_promedio=True))
     
     # Declarar la edad del paciente
-    edad = edad_var.get()
-    print(f"Declarando edad: {edad}")
-
     engine.declare(CaracteristicasPaciente(edad=edad_var.get()))
 
     # Ejecutar el sistema experto
