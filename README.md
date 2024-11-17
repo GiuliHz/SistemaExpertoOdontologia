@@ -24,7 +24,7 @@ Este sistema experto utiliza una interfaz gráfica para diagnosticar y recomenda
 
 ![Ejemplo de Uso](https://github.com/user-attachments/assets/e560eeda-7370-49e6-9845-b62ee71dbdf0)
 
-[!IMPORTANT]
+> [!WARNING]
 Es obligatorio ingresar la edad del paciente
 
 ![](https://github.com/user-attachments/assets/6e5e54fb-ab2b-4ae1-8701-710f2d4ed20e)
