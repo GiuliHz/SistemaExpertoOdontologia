@@ -134,8 +134,8 @@ def generar_receta():
     consideraciones_text.insert(tk.END, "Consideraciones:\n" + "\n".join(f"- {c}" for c in receta["consideraciones"]))
     consideraciones_text.config(state="disabled")
 
-# Botón para generar la receta
-tk.Button(main_frame, text="Generar Receta", command=generar_receta).grid(row=2, column=2, sticky="ew")
+# Botón para generar la guía
+tk.Button(main_frame, text="Generar Guía", command=generar_receta).grid(row=2, column=2, sticky="ew")
 
 # Ejecutar la aplicación
 root.mainloop()
