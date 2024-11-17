@@ -5,17 +5,20 @@ Este sistema experto utiliza una interfaz gráfica para diagnosticar y recomenda
 - Sistema Operativo: Windows, macOS, o Linux.
 - Python: Versión 3.10 o superior instalada.
 - Bibliotecas Necesarias:
-    tkinter (preinstalado en Python).
-    experta (instalable con: pip install experta).
+    _tkinter (preinstalado en Python).
+    _experta (instalable con: pip install experta).
     
 ## Iniciando el Programa
 1. Ejecutar el programa:
-    Abre una terminal o consola.
-    Navega al directorio del programa, por ejemplo: cd path/to/Sistema_Experto
-2. Ejecuta el archivo interfaz.py con:
-      python interfaz.py
-3. Interfaz gráfica:
-      Aparecerá una ventana con secciones divididas para ingresar Síntomas, Características del Paciente, y un botón para generar la una guía.
+    _Abre una terminal o consola.
+    _Navega al directorio del programa, por ejemplo:
+> cd path/to/Sistema_Experto
+
+3. Ejecuta el archivo interfaz.py con:
+> python interfaz.py
+
+4. Interfaz gráfica:
+   _Aparecerá una ventana con secciones divididas para ingresar Síntomas, Características del Paciente, y un botón para generar la una guía.
    
 ![Interfaz antes de ingresar datos](https://github.com/user-attachments/assets/0a3879bb-767f-4d90-b132-71e097507d91)
 
